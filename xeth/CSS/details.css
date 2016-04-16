@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+.detailsPage {
+    padding: 0 0 80px 0;
+}
+.detailsPage .highlightItem {
+    margin: 80px auto;
+    color: #778283;
+    font-size: 0.9rem;
+    height: 160px;
+    clear: both;
+}
+.detailsPage .highlightItem .txt {
+    position: relative;
+    width: 560px;
+    float: right;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.detailsPage .highlightItem .icon {
+    height: 160px;
+    width: 160px;
+    float: left;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.detailsPage .highlightItem .icon.eth {
+    background-color: #75929F;
+    background-image: url(../img/eth-01.png);
+}
+.detailsPage .highlightItem .icon.bitprofile {
+    background-color: #3E4E5A;
+    background-image: url(../img/bitprofile-01.png);
+}
+.detailsPage .highlightItem .icon.stealth {
+    background-color: #D2D5D6;
+    background-image: url(../img/stealth-01.png);
+}
+.detailsPage .preview {
+    text-align: center;
+    width: 370px;
+    margin: 0 0 60px 60px;
+    float: right;
+}
+
+.detailsPage .preview img {
+    max-width: 100%;
+}

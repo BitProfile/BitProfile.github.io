@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: Regular;
+    src: local(Regular), url('../fonts/Ubuntu-Regular.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: Bold;
+    src: local(Regular), url('../fonts/Ubuntu-Bold.ttf') format('opentype');
+}
+
+html, body {
+    position: absolute;
+	background-color: #ffffff;
+	margin: 0px;
+	font-family: Regular, Arial, Helvetica, sans-serif;
+	height: 100%;
+	width: 100%;
+	min-width:800px;
+	min-height:560px;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1, h2 {
+    font-weight: normal;
+    font-size: 1.25rem;
+    color: #3E4E5A;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #75929F;
+}
+
+p {
+    color: #778283;
+    font-size: 0.9rem;
+}
+
+a {
+	color: #BB874E;
+	text-decoration: none;
+	outline: none;
+	cursor: pointer;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.btn {
+    text-decoration: none !important;
+    display: block;
+    line-height: 60px;
+    height: 60px;
+    width: 200px;
+    background-color: #75929F;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 1.25rem;
+    text-align: center;
+}
+.btn.icon {
+    width: 140px;
+    padding-left: 60px;
+    text-align: left;
+}
+.btn.icon:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 60px;
+    width: 60px;
+    margin-left: -60px;
+}
+
+.btn:hover {
+    background-color: #BB874E !important;
+}
+
+.contentWrapper {
+    width: 750px;
+    margin: 0 auto;
+}
+
+.header {
+	top: 0;
+    left: 0;
+    right: 0;
+	height: 20px;
+    padding: 30px;
+	position:fixed;
+	z-index: 1000;
+    background-color: #3E4E5A;
+    
+    transition: 200ms background-color;
+}
+
+.header .headLogo {
+	background-image: url(../img/logo_s-01.png);
+	background-repeat: no-repeat;
+	height: 48px;
+	width: 184px;
+	display: none;
+	position:absolute;
+}
+
+.header.scrolled {
+    background-color: #D2D5D6;
+}
+
+.header.scrolled .headLogo {
+	display: block;
+}
+
+.mainNav {
+	list-style: none;
+	display: block;
+	padding: 0;
+	margin: 0;
+	height: 20px;
+	line-height: 20px;
+	font-size: 1.1rem;
+	text-align:center;
+    float: right;
+}
+
+.mainNav li {
+	float:left;
+    margin-left: 30px;
+}
+
+.mainNav li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #75929F;
+}
+
+.mainNav li a:hover {
+	color: #ffffff;
+}
+
+.pageTag {
+    position: absolute;
+    height: 0;
+    margin-top: -80px;
+    margin-bottom: 80px;
+}

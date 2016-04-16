@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+.splashPage {
+    min-height: 100%;
+    background-color: #3E4E5A;
+}
+.splashPage .logo {
+    background-image: url(../img/logo-01.png);
+    background-repeat: no-repeat;
+    width: 243px;
+    padding: 83px 0 20px 0;
+    text-align: center;
+    color: #778283;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+.splashPage .splitSection {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.splashPage .logoSection {
+    left: 0;
+    right: 50%;
+}
+.splashPage .highlightsSection {
+    left: 50%;
+    right: 0;
+    padding-right: 10%;
+}
+.splashPage .full {
+    left: 0;
+    right: 0;
+}
+.splashPage .highlights {
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+    list-style-type: none;
+    color: #778283;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    max-width: 480px;
+}
+.splashPage .highlights li {
+    margin: 20px 0;
+    padding: 20px 0 20px 56px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+.splashPage .highlights li.eth {
+    background-image: url(../img/eth_s-01.png);
+}
+.splashPage .highlights li.bitprofile {
+    background-image: url(../img/bitprofile_s-01.png);
+}
+.splashPage .highlights li.stealth {
+    background-image: url(../img/stealth_s-01.png);
+}

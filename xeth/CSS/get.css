@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+.getPage {
+    padding: 40px 0;
+    background-color: #D2D5D6;
+    height: 60px;
+}
+
+.getPage .btn {
+    float: right;
+    margin-left: 30px;
+}
+
+.getPage .btn:hover {
+    background-color: #BB874E;
+}
+
+.getPage .info h1,
+.getPage .info h2 {
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.getPage .info .date:before {
+    content: "(";
+}
+
+.getPage .info .date:after {
+    content: ")";
+}
