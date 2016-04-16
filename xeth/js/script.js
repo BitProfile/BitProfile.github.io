@@ -22,7 +22,7 @@ function stickyTop() {
 
 $(document).ready(function(){
     var $donate = $("#donateETH");
-    var uri = "JdAkhvSaBRZSKVqatYE2Bd5aCZQU7kdg9j";
+    var uri = "0x15e0d2A370152D9EfdF23dFF00F00D47d6Df9E54";
 
     var qr = new QRCode($donate.find(".img").get(0), {
         width : 210,
