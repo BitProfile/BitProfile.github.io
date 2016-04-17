@@ -1,0 +1,93 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <title>bitprofile</title>
+    <link href="CSS/main.css" rel="stylesheet" type="text/css">
+    <link href="CSS/support.css" rel="stylesheet" type="text/css">
+    <!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+		
+    <!--script src='http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js'></script-->
+	<script type="text/javascript" src="xeth/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="xeth/js/qrcode.min.js"></script>
+</head>
+
+<body>
+   
+<video class="bgVideo" loop autoplay name="media"><source src="video/bg.webm" type="video/webm"></video>
+
+<div class="body">
+
+<div class="header">
+	
+    <a href="#" class="headLogo"></a>
+
+	<ul id="mainNav" class="mainNav">
+		<li><a id="details" data-text="About" href="javascript:void(0)">About</a></li>
+		<li class="active2"><a id="get" data-text="Get" href="javascript:void(0)">Get</a></li>
+		<li><a id="support" data-text="Support" href="javascript:void(0)">Support</a></li>
+	</ul>
+
+</div>
+
+<div class="homeLogo">
+</div>
+
+<div id="content_wrapper">            
+    <div id="content">
+    	<div class="page">
+			<div id="detailsPage" class="pageTag"></div>
+            <p>BitProfile is a decentralized user namespace system. It makes easy to share same profile in multiple DAPPS thus taking advantage of global user's reputation. An DAPP can use default BitProfile registrar or can deploy their own with their own registration rules without loosing advantage of using shared user reputation. </p>
+            <p>Profile handle can be used to receive direct payments anonymously. It uses stealth address, an anonymity technique that protects the privacy of the recipient and prevents observers from knowing profile's transaction history.</p>
+            <p>Bitprofile implements multiple levels of profile authentication and access control security policies, which makes easy to use same profile on multiple devices (phone, watch, tablet). Having different keys with different privilegies for every device in part, profile is not compromised even if one of the keys is leaked or lost. Authentication mechanism is extensible, by default public key authentication is used but every profile can define their own authentication rules, this makes easy to migrate to post quantum algorithms.</p></p>
+
+            <p>BitProfile based user authentication can be easily implemented in any decentralized or centralized application by using one of the available open source libraries.</p>
+
+			<div id="getPage" class="pageTag"></div>
+            <p>
+<!--            	<a class="link" target="_blank" href="#">DOWNLOAD</a>-->
+            	<a class="link" target="_blank" href="https://github.com/BitProfile">View on GITHUB</a>
+<!--            	<a class="link" target="_blank" href="#">Read on REDDIT</a>-->
+            </p>
+            
+            <h1>Projects using bitprofile</h1>
+            <p>
+            	<a class="link icon xeth" target="_blank" href="http://xeth.org">&nbsp;</a>
+            </p>
+        
+        	<div id="supportPage" class="pageTag"></div>
+            <div class="supportPage">
+                <div class="info">
+                    <div class="txt">
+                        <h1>Support BitProfile project</h1>
+                        <p>BitProfile is an open-source, comunity based, non-profit project, being developed collaboratively by volunteers.</p>
+                        <p>Any kind of support is highly appreciated. You can help us with development, financially or just spread the word.</p>
+                    </div>
+                    <a target="_blank" href="https://github.com/BitProfile/" class="btn icon github">Code &amp; Issues</a>
+                    <a target="_blank" href="https://twitter.com/home?status=%40BitProfile%20-%20decentralized%20user%20namespace%20system%20http%3A//bitprofile.org" class="btn icon twitter">Tweet about it</a>
+                </div>
+                <div class="donate" id="donateETH">
+                    <div class="img"></div>
+                    <div class="txt">0x15e0d2A370152D9EfdF23dFF00F00D47d6Df9E54</div>
+                    <a href="javascript:void(0)" class="btn">Support us with ETH</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+    <script src='js/menu.js'></script>
+    <script src='js/pagemask.js'></script>
+    <script src='js/donate.js'></script>
+
+</body>
+</html>

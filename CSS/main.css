@@ -1,0 +1,227 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: Light;
+    src: local(Light), url('../fonts/Ubuntu-Light.ttf') format('opentype');
+}
+
+html, body {
+	margin:0;
+	position:relative;
+	height: 100%;
+	width: 100%;
+	min-width: 900px;
+}
+
+body {
+	background-color: #3e4e5a;
+	font-family: Light, Arial, Helvetica, sans-serif;
+}
+
+.btn {
+    text-decoration: none !important;
+    display: block;
+    line-height: 60px;
+    height: 60px;
+    width: 200px;
+    background-color: #75929F;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 1.25rem;
+    text-align: center;
+}
+.btn.icon {
+    width: 140px;
+    padding-left: 60px;
+    text-align: left;
+}
+.btn.icon:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 60px;
+    width: 60px;
+    margin-left: -60px;
+}
+
+.btn:hover {
+    background-color: #f7931e !important;
+}
+
+.bgVideo {
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(../img/bg_video.png) no-repeat;
+    background-size: cover;
+}
+
+.body {
+	
+	min-height: 100%;
+	background: none;
+	background: url(../img/bg-01.png);
+	/*background: none rgba(38,54,65,0.87);*/
+}
+
+.header {
+	top: 40px;
+	height: 40px;
+	width: 100%;
+	min-width: 900px;
+	position:fixed;
+	z-index: 1000;
+}
+
+
+.header .headLogo {
+	background-image: url(../img/logo-01.png);
+	background-repeat: no-repeat;
+	height: 48px;
+	width: 184px;
+	display: block;
+	display: none;
+	position:absolute;
+	top: -8px;
+	left: 32px;
+}
+
+.mainNav {
+	list-style: none;
+	display: block;
+	border-bottom:1px solid #111a1e;
+	padding: 0;
+	margin: 0 auto;
+	width: 420px;
+	height: 40px;
+	line-height: 40px;
+	overflow:hidden;
+	text-align:center;
+}
+
+.mainNav li {
+	width: 140px;
+	height: 100%;
+	float:left;
+	font-size: 1.2rem;
+	line-height: 40px;
+}
+
+.mainNav li a {
+	display:block;
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #111a1e;
+}
+
+.mainNav li a:after {
+	content: attr(data-text);
+	display: block;
+	font-weight:bold;
+}
+
+.mainNav li a {
+	margin-top: 0px;
+	transition: 0.3s cubic-bezier(0.1, 0.1, 0.5, 1.4);
+}
+
+.mainNav li a:hover,
+.mainNav li.active a {
+	margin-top: -40px;
+}
+
+#magic-line { 
+	position: absolute; 
+	bottom: -2px; 
+	/*left: 0; */
+	width: 0px; 
+	height: 3px; 
+	background: #111a1e; 
+}
+
+#content_wrapper {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#content {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+	width: 100%;
+}
+
+.homeLogo {
+	background-image: url(../img/logoL-01.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 220px;
+	width: 220px;
+	position:fixed;
+	top: 50%;
+	left: 50%;
+	margin: -110px 0 0 -110px;
+	pointer-events:none;
+}
+
+.page {
+	margin: auto;
+	width: 900px;
+	color:#9ec4d5;
+	padding-bottom: 40px;
+	text-align: justify;
+}
+
+.page h1 {
+	font-size: 1.4rem;
+	font-weight: normal;
+	color: #ffffff;
+	margin-top: 40px;
+}
+
+.page .link {
+	height: 40px;
+	line-height: 40px;
+	padding: 0 20px;
+	display: inline-block;
+	text-decoration: none;
+	background-color: #bb874e;
+	color: #ffffff;
+}
+
+.page .link:hover {
+	background-color: #f7931e;
+}
+
+.page .link.icon {
+	padding: 0;
+	background: none;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 60px;
+}
+
+.page .link.xeth {
+	background-image:url(../img/xeth-01.png);
+	width: 162px;
+}
+
+.pageTag {
+    position: absolute;
+    height: 0;
+    margin-top: -120px;
+    margin-bottom: 120px;
+}

@@ -1,0 +1,66 @@
+@charset "utf-8";
+/*
+.supportPage {
+    padding: 60px 0;
+    background-color: #3E4E5A;
+}*/
+.supportPage:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+}
+.supportPage .btn {
+    width: 230px;
+    text-transform: none;
+}
+.supportPage .btn.icon {
+    width: 170px;
+}
+.supportPage .info {
+    width: 520px;
+    float: left;
+}
+.supportPage .info .txt {
+    padding: 20px 60px 0 0;
+    height: 270px;
+}
+.supportPage .info .btn {
+    float: left;
+    margin-right: 30px;
+}
+.supportPage .info .btn.github {
+    background-color: #D2D5D6;
+    color: #333333;
+}
+.supportPage .info .btn.github:before {
+    background-image: url(../img/github_s-01.png);
+}
+.supportPage .info .btn.twitter {
+    background-color: #28A9E2;
+}
+.supportPage .info .btn.twitter:before {
+    background-image: url(../img/twitter_s-01.png);
+}
+.supportPage .donate {
+    width: 230px;
+    float: right;
+}
+.supportPage .donate .img {
+    width: 210px;
+    height: 210px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #FFFFFF;
+}
+.supportPage .donate .txt {
+	height: 28px;
+    padding: 6px 10px;
+    line-height: 14px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    color: #3E4E5A;
+    text-align: center;
+    font-size: 0.7rem;
+    word-break: break-word;
+}
