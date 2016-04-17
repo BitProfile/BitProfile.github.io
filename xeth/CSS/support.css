@@ -54,11 +54,13 @@
     background-color: #FFFFFF;
 }
 .supportPage .donate .txt {
-    height: 40px;
-    line-height: 40px;
+	height: 28px;
+    padding: 6px 10px;
+    line-height: 14px;
     margin-bottom: 10px;
     background-color: #ffffff;
     color: #3E4E5A;
     text-align: center;
-    font-size: 0.65rem;
+    font-size: 0.7rem;
+    word-break: break-word;
 }

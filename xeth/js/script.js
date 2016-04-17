@@ -22,7 +22,7 @@ function stickyTop() {
 
 $(document).ready(function(){
     var $donate = $("#donateETH");
-    var uri = "0x15e0d2A370152D9EfdF23dFF00F00D47d6Df9E54";
+    var uri = $donate.find(".txt").text();
 
     var qr = new QRCode($donate.find(".img").get(0), {
         width : 210,
@@ -32,7 +32,6 @@ $(document).ready(function(){
         correctLevel : QRCode.CorrectLevel.M
     });
     
-    $donate.find(".txt").html(uri);
     $donate.find(".btn").on("click",function(){window.open("ethereum:"+uri);});
 
     stickyTop();

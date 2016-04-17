@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+html, body {
+	font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+	background-color: #ffffff;
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+	min-width:400px;
+	min-height:560px;
+}
+
+a {
+	color: #BB874E;
+	text-decoration: none;
+	outline: none;
+	cursor: pointer;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.header {
+	height: 20px;
+    padding: 30px;
+    background-color: #D2D5D6;
+}
+
+.header .headLogo {
+	background-image: url(../img/logo_s-01.png);
+	background-repeat: no-repeat;
+	height: 48px;
+	width: 184px;
+	position:absolute;
+	display: block;
+}
+
+.downloadsPage {
+    width: 400px;
+    margin: auto;
+    padding: 30px;
+}
+.downloadsPage .OS {
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding: 20px 0 20px 50px;
+    margin: 0;
+    line-height: 20px;
+    display: block;
+    border-bottom: 1px solid #CCCCCC;
+}
+.downloadsPage .OS a {
+    float: right;
+    margin-left: 20px;
+}
+.downloadsPage .OS a[href="#"] {
+	color: #CCCCCC;
+	pointer-events: none;
+}
+.downloadsPage .OS.windows {
+    background-image: url(../img/os/windows.png);
+}
+.downloadsPage .OS.mac {
+    background-image: url(../img/os/apple.png);
+}
+.downloadsPage .OS.linuxmint {
+    background-image: url(../img/os/linuxmint.png);
+}
+.downloadsPage .OS.ubuntu {
+    background-image: url(../img/os/ubuntu.png);
+}
+.downloadsPage .OS.fedora {
+    background-image: url(../img/os/fedora.png);
+}
+.downloadsPage .OS.opensuse {
+    background-image: url(../img/os/opensuse.png);
+}

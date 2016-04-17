@@ -7,11 +7,11 @@
 .splashPage .logo {
     background-image: url(../img/logo-01.png);
     background-repeat: no-repeat;
-    width: 243px;
+    width: 246px;
     padding: 83px 0 20px 0;
     text-align: center;
     color: #778283;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     text-transform: uppercase;
     margin: 0 auto;
 }
