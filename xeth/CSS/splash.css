@@ -29,6 +29,12 @@
     right: 0;
     padding-right: 10%;
 }
+.splashPage .highlightsSection.short {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+}
 .splashPage .full {
     left: 0;
     right: 0;
@@ -48,6 +54,12 @@
     padding: 20px 0 20px 56px;
     background-repeat: no-repeat;
     background-position: left center;
+}
+.splashPage .short .highlights li {
+    margin: 20px 10px;
+    padding: 100px 0 20px 0;
+    background-position: center center;
+    display: inline-block;
 }
 .splashPage .highlights li.eth {
     background-image: url(../img/eth_s-01.png);
