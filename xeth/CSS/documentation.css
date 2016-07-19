@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+.documentationPage h1 {
+    margin-top: 60px;
+}
+.documentationPage h1:first-child {
+    margin-top: 20px;
+}
+.documentationPage h3 {
+    color: #75929F;
+    font-weight: normal;
+    font-size: 1.1rem;
+}
+.documentationPage .code {
+    font-family: monospace;
+    padding: 15px 30px;
+    background-color: #f7f7f7;
+}

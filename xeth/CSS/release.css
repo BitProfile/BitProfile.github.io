@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+.releasePage h1 {
+    margin-bottom: 30px;
+}
+.releasePage h2 {
+    border-bottom: 1px solid #75929F;
+}
+.releasePage ul li {
+    color: #778283;
+    font-size: 0.9rem;
+    padding: 10px;
+}

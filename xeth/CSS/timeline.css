@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+.timelinePage {
+    text-transform: uppercase;
+}
+.timelinePage:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.timelinePage .title {
+    font-size: 1.25rem;
+    color: #75929F;
+}
+.timelinePage .time {
+    font-size: 0.9rem;
+    color: #D2D5D6;
+    line-height: 20px;
+    font-size: 0.9rem;
+}
+.timelinePage .currentRelease {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-image: url(../img/timeline_head-01.png);
+    padding-bottom: 15px;
+}
+.timelinePage .currentRelease .time {
+    margin-top: 55px;
+}
+.timelinePage .column {
+    width: 50%;
+    float: left;
+}
+.timelinePage ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.timelinePage ul:before,
+.timelinePage ul:after {
+    display: block;
+    content: "";
+    margin-left: 105px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-image: url(../img/timeline_backlog_h-01.png);
+}
+.timelinePage ul.inprogress:before,
+.timelinePage ul.inprogress:after {
+    background-image: url(../img/timeline_inprogress_h-01.png);
+}
+.timelinePage ul.todo:before,
+.timelinePage ul.todo:after {
+    background-image: url(../img/timeline_todo_h-01.png);
+}
+.timelinePage ul:before {
+    height: 50px;
+    line-height: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #D2D5D6;
+}
+.timelinePage ul:after {
+    content: "";
+    height: 30px;
+}
+.timelinePage ul.backlog:before {
+    content: "backlog";
+}
+.timelinePage ul.inprogress:before {
+    content: "in progress";
+    color: #39B54A;
+}
+.timelinePage ul.todo:before {
+    content: "to do";
+    color: #75929F;
+}
+.timelinePage .column.right ul:before,
+.timelinePage .column.right ul:after {
+    margin-left: 0;
+    margin-right: 105px;
+}
+.timelinePage ul li {
+    padding-top: 33px;
+    min-height: 57px;
+    line-height: 24px;
+    clear: both;
+    background-repeat: no-repeat;
+    background-position: 225px top;
+    background-image: url(../img/timeline_backlog-01.png);
+}
+.timelinePage ul.inprogress li {
+    background-image: url(../img/timeline_inprogress-01.png);
+}
+.timelinePage ul.todo li {
+    background-image: url(../img/timeline_todo-01.png);
+}
+.timelinePage .column.right ul li {
+    background-position: 120px top;
+}
+.timelinePage ul li .title {
+    width: 210px;
+    float: left;
+    text-align: right;
+}
+.timelinePage ul li .time {
+    width: 105px;
+    padding: 2px 0;
+    float: right;
+}
+.timelinePage ul li:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.timelinePage .column.right ul li .title {
+    float: right;
+    text-align: left;
+}
+.timelinePage .column.right ul li .time {
+    float: left;
+    text-align: right;
+}
+.timelinePage ul.inprogress li .title {
+    color: #3E4E5A;
+}
+.timelinePage ul.inprogress li .time {
+    color: #75929F;
+}
+.timelinePage ul li .time .post {
+    display: block;
+    margin: 0;
+    color: #D2D5D6;
+    text-decoration: line-through;
+}

@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>XETH timeline</title>
+
+<link href="CSS/main.css" rel="stylesheet" type="text/css">
+<link href="CSS/documentation.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    
+<div id="header" class="header scrolled">
+	
+    <a href="index.html" class="headLogo"></a>
+
+	<ul id="mainNav" class="mainNav">
+		<li><a id="detailsNav" href="index.html#detailsPage">About</a></li>
+		<li><a id="documentationNav" href="documentation.html">Documentation</a></li>
+		<li><a id="timelineNav" href="timeline.html">Timeline</a></li>
+		<li><a id="getNav" href="download.html">Get</a></li>
+		<li><a id="supportNav" class="hl" href="index.html#supportPage">Contribute</a></li>
+	</ul>
+
+</div>
+    
+<div class="documentationPage contentWrapper subPage">
+    <h1>Stealth payments</h1>
+    <p>Stealth payment is a private exchange of funds which protects the privacy of the recipient and prevents observers from knowing the user's transaction history.</p>
+    <p>On each payment the sender generates a new address using the recipient's stealth address data. Only the recipient is able to spend those funds. The spending private key can be generated only by the receiver.</p>
+    <h1>Dual-key stealth</h1>
+    <p>Dual key allows scanning for payments without exposing the spending private key. In this scheme two keys are used - one for spending and one for scanning. The spending key is decrypted only when spending funds and it requires user interaction. The scan key is not encrypted.</p>
+    <h3>Receiver:</h3>
+    <div class="code">
+        <p>
+            Q = public scan key (EC point, 33 bytes)<br>
+            d = private scan key (integer, 32 bytes)<br>
+            R = public spend key<br>
+            f = private spend key
+        </p>
+        <p>
+            Q = dG<br>
+            R = fG
+        </p>
+        <p>
+            stealth address: &lt;scan=Q&gt; &lt;spend=R, ...&gt;
+        </p>
+    </div>
+    <h3>Sender (has Q, not d):</h3>
+    <div class="code">
+        <p>P = eG</p>
+    </div>
+    <h3>By publishing P, only sender and receiver have access to c:</h3>
+    <div class="code">
+        <p>c = H(eQ) = H(dP)</p>
+    </div>
+    <h3>Sender:</h3>
+    <div class="code">
+        <p>R' = R + cG</p>
+    </div>
+    <h3>Receiver:</h3>
+    <div class="code">
+        <p>
+            R' = R + cG     [without decrypting wallet]<br>
+            &emsp;&emsp;&emsp;= (f + c)G   [after decryption of wallet]
+        </p>
+    </div>
+    <p>
+        In this scheme, we can use the scan keypair (Q, d) to generate the shared secret c, and then hence derive the address from the public part R.
+    </p>
+    <h1>Credits</h1>
+    <p>The concept was invented by Peter Todd based on ByteCoin's earlier work.</p>
+</div>
+    
+</body>
+</html>
