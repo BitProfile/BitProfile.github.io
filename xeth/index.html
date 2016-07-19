@@ -17,33 +17,39 @@
 
 <body>
     
-<div id="header" class="header scrolled">
+<div id="header" class="header">
 	
     <a href="#" class="headLogo"></a>
 
 	<ul id="mainNav" class="mainNav">
-		<li><a id="details" href="javascript:void(0)">About</a></li>
-		<li><a id="get" href="javascript:void(0)">Get</a></li>
-		<li><a id="support" href="javascript:void(0)">Support</a></li>
+		<li><a id="detailsNav" href="javascript:void(0)">About</a></li>
+		<li><a id="documentationNav" href="documentation.html">Documentation</a></li>
+		<li><a id="timelineNav" href="timeline.html">Timeline</a></li>
+		<li><a id="getNav" href="download.html">Get</a></li>
+		<li><a id="supportNav" class="hl" href="javascript:void(0)">Contribute</a></li>
 	</ul>
 
 </div>
     
 <div class="splashPage">
+    <video class="bgLayer bgVideo" loop autoplay name="media"><source src="video/bg.webm" type="video/webm"></video>
+    <div class="bgLayer"></div>
     <div class="splitSection logoSection full">
-        <div class="logo">Open-source Ethereum GUI wallet</div>
+        <div class="logo">When Privacy Matters</div>
     </div>
     <div class="highlightsSection short">
         <ul class="highlights">
             <li class="eth">ethereum wallet</li>
             <li class="bitprofile">bitprofile support</li>
             <li class="stealth">stealth payments</li>
+            <li class="opensource">free<br>open-source</li>
         </ul>
     </div>
 </div>
 
 <div id="detailsPage" class="pageTag"></div>
-<div class="detailsPage contentWrapper">
+<div class="detailsPage">
+<div class="contentWrapper">
     <div class="highlightItem">
         <div class="icon eth"></div>
         <div class="txt">
@@ -62,7 +68,7 @@
         <div class="icon stealth"></div>
         <div class="txt">
             <h2>Stealth Payments</h2>
-            <p>Private exchange of funds, protects the privacy of the recipient and prevents observers from knowing user's transaction history.</p>
+            <p>Private exchange of funds, protects the privacy of the recipient and prevents observers from knowing the user's transaction history. Find more information in the <a href="documentation.html">documentation</a>.</p>
         </div>
     </div>
     
@@ -73,8 +79,10 @@
     <h1>XETH Project</h1>
     <p>Xeth is a free, open-source Ethereum GUI wallet. It implements various useful features, like stealth payments, bitprofile support, secure random key generation, addressbook and much more.</p>
     <p>The intuitive and smooth UI brings the best user experience.</p>
-    <p>It's using <a href="https://github.com/ethereum/go-ethereum" target="_blank">GETH</a> for communication with Ethereum network.</p>
+    <p>It's using <a href="https://github.com/ethereum/go-ethereum" target="_blank">GETH</a> to communicate with Ethereum network.</p>
+    <p>For more details see the <a href="documentation.html">documentation</a>.</p>
 
+</div>
 </div>
 
 <div id="getPage" class="pageTag"></div>
@@ -83,8 +91,8 @@
     <a href="download.html" class="btn">Download</a>
     <a target="_blank" href="https://github.com/BitProfile/Xeth" class="btn">GitHub</a>
     <div class="info">
-        <h1>Latest Release 0.1.1</h1>
-        <h2 class="date">16 apr 2016</h2>
+        <h1>Latest Release 0.2.1 <a href="release.html">(notes)</a></h1>
+        <h2 class="date">19 jul 2016</h2>
     </div>
 </div>
 </div>
@@ -95,8 +103,8 @@
     <div class="info">
         <div class="txt">
             <h2>Support XETH project</h2>
-            <p>Xeth is an open-source, comunity based, non-profit project, being developed collaboratively by volunteers.</p>
-            <p>Any kind of support is highly appreciated. You can help us with development, financially or just spread the word.</p>
+            <p>Xeth is an open-source, community based, non-profit project, being developed collaboratively by volunteers.</p>
+            <p>Any kind of support is highly appreciated. You can help us with the development, financially or just spread the word.</p>
         </div>
         <a href="https://github.com/BitProfile/Xeth/issues" target="_blank" class="btn icon github">Code &amp; Issues</a>
         <a href="https://twitter.com/home?status=%23XETH%20%23Ethereum%20GUI%20wallet%20with%20%23stealth%20payments%20and%20%40BitProfile%20support%20http%3A//xeth.org" target="_blank" class="btn icon twitter">Tweet about it</a>

@@ -1,20 +1,46 @@
 @charset "utf-8";
 
 .splashPage {
-    min-height: 100%;
-    background-color: #3E4E5A;
+    min-height: 420px;
+    /*background-color: #3E4E5A;*/
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
 }
+
+.splashPage .bgLayer {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(31, 39, 45, 0.85);
+}
+
+.splashPage .bgVideo {
+    position: fixed;
+    background-image: url(../img/bg_video.jpg);
+}
+
 .splashPage .logo {
     background-image: url(../img/logo-01.png);
     background-repeat: no-repeat;
     width: 246px;
-    padding: 83px 0 20px 0;
+    padding: 83px 0 0 0;
     text-align: center;
     color: #778283;
-    font-size: 0.85rem;
+    font-size: 1.3rem;
     text-transform: uppercase;
     margin: 0 auto;
 }
+
 .splashPage .splitSection {
     position: absolute;
     top: 50%;
@@ -23,17 +49,27 @@
 .splashPage .logoSection {
     left: 0;
     right: 50%;
+    opacity: 1;
+    z-index: -1;
+    
+    transition: 200ms opacity;
 }
+.splashPage .logoSection.scrolled {
+    opacity: 0;
+}
+
 .splashPage .highlightsSection {
     left: 50%;
     right: 0;
     padding-right: 10%;
 }
 .splashPage .highlightsSection.short {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     padding: 0;
+    z-index: -10;
+    text-align: center;
 }
 .splashPage .full {
     left: 0;
@@ -47,7 +83,7 @@
     color: #778283;
     text-transform: uppercase;
     font-size: 0.9rem;
-    max-width: 480px;
+    width: 480px;
 }
 .splashPage .highlights li {
     margin: 20px 0;
@@ -56,10 +92,12 @@
     background-position: left center;
 }
 .splashPage .short .highlights li {
-    margin: 20px 10px;
+    margin: 20px 0px;
     padding: 100px 0 20px 0;
     background-position: center center;
     display: inline-block;
+    text-align: center;
+    width: 110px;
 }
 .splashPage .highlights li.eth {
     background-image: url(../img/eth_s-01.png);
@@ -69,4 +107,7 @@
 }
 .splashPage .highlights li.stealth {
     background-image: url(../img/stealth_s-01.png);
+}
+.splashPage .highlights li.opensource {
+    background-image: url(../img/opensource_s-01.png);
 }

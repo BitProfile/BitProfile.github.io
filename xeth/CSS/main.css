@@ -12,13 +12,13 @@
 
 html, body {
     position: absolute;
-	background-color: #ffffff;
+	/*background-color: #ffffff;*/
 	margin: 0px;
 	font-family: Regular, Arial, Helvetica, sans-serif;
 	height: 100%;
 	width: 100%;
 	min-width:800px;
-	min-height:560px;
+	min-height:420px;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -86,34 +86,61 @@ a:hover {
     margin: 0 auto;
 }
 
+.subPage {
+    margin-top: 80px;
+    padding: 40px 0;
+}
+
+.warningPage {
+    padding: 40px 0;
+    background-color: #D2D5D6;
+}
+
+.slimPage {
+    width: 400px;
+}
+
 .header {
 	top: 0;
     left: 0;
     right: 0;
-	height: 20px;
+	/*height: 20px;*/
     padding: 30px;
 	position:fixed;
 	z-index: 1000;
-    background-color: #3E4E5A;
-    
-    transition: 200ms background-color;
+    /*background-color: #3E4E5A;*/
+}
+
+.header:after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .header .headLogo {
 	background-image: url(../img/logo_s-01.png);
 	background-repeat: no-repeat;
-	height: 48px;
-	width: 184px;
-	display: none;
+	height: 21px;
+	width: 81px;
+    pointer-events: none;
+    opacity: 0;
 	position:absolute;
+    
+    transition: 300ms opacity;
+}
+
+.header.scrolled1 {
+    background-color: #3E4E5A;
 }
 
 .header.scrolled {
-    background-color: #D2D5D6;
+    /*background-color: #D2D5D6;*/
+    background-color: #373d43;
 }
 
 .header.scrolled .headLogo {
-	display: block;
+    pointer-events: auto;
+    opacity: 1;
 }
 
 .mainNav {
@@ -121,11 +148,12 @@ a:hover {
 	display: block;
 	padding: 0;
 	margin: 0;
-	height: 20px;
+	/*height: 20px;*/
 	line-height: 20px;
 	font-size: 1.1rem;
 	text-align:center;
     float: right;
+    padding-left: 80px;
 }
 
 .mainNav li {
@@ -137,6 +165,10 @@ a:hover {
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #75929F;
+}
+
+.mainNav li a.hl {
+	color: #BB874E;
 }
 
 .mainNav li a:hover {

@@ -1,5 +1,6 @@
 var $window = $(window);
 var $header = $("#header");
+var $logo = $(".splashPage .logoSection");
 
 function scrollTo(element, time){
     if(!time) time = 300;
@@ -15,7 +16,10 @@ function initMenuRef(button, ref){
 }
 
 function stickyTop() {
+    //$header.toggleClass("scrolled1",($window.height()/2-$header.outerHeight()*2<=$window.scrollTop()));
     $header.toggleClass("scrolled",($window.height()-$header.outerHeight()<=$window.scrollTop()));
+    $logo.toggleClass("scrolled",($window.height()-300<=$window.scrollTop()));
+    $logo.css("margin-top",$window.scrollTop()/2);
 }
 
 
@@ -36,9 +40,8 @@ $(document).ready(function(){
 
     stickyTop();
     qr.makeCode(uri);
-    initMenuRef(".mainNav #details", "#detailsPage");
-    initMenuRef(".mainNav #get", "#getPage");
-    initMenuRef(".mainNav #support", "#supportPage");
+    initMenuRef("#detailsNav", "#detailsPage");
+    initMenuRef("#supportNav", "#supportPage");
 });
 
 $window.resize(function() {

@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+html, body {
+	font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+	background-color: #ffffff;
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+	min-width:400px;
+	min-height:560px;
+}
+
+h1, h2 {
+    font-weight: normal;
+    font-size: 1.25rem;
+    color: #3E4E5A;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #75929F;
+}
+
+p {
+    color: #778283;
+    font-size: 0.9rem;
+}
+
+a {
+	color: #BB874E;
+	text-decoration: none;
+	outline: none;
+	cursor: pointer;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.header {
+	height: 20px;
+    padding: 30px;
+    background-color: #373d43;
+}
+
+.header .headLogo {
+	background-image: url(../img/logo_s-01.png);
+	background-repeat: no-repeat;
+	height: 48px;
+	width: 184px;
+	position:absolute;
+	display: block;
+}
