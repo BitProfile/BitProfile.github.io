@@ -1,21 +1,21 @@
 @charset "utf-8";
 
-.downloadsPage {
-    margin-top: 0px;
-}
 .downloadsPage .OS {
     background-repeat: no-repeat;
     background-position: left center;
-    padding: 20px 0 20px 50px;
+    padding: 20px 10px 20px 50px;
     margin: 0;
     line-height: 20px;
     display: block;
-    border-bottom: 1px solid #CCCCCC;
+    /*border-bottom: 1px solid #CCCCCC;*/
+    float: left;
+    width: 130px;
+    display: block;
 }
-.downloadsPage .OS a {
+/*.downloadsPage .OS a {
     float: right;
     margin-left: 20px;
-}
+}*/
 .downloadsPage .OS a[href="#"] {
 	color: #CCCCCC;
 	pointer-events: none;
@@ -37,4 +37,10 @@
 }
 .downloadsPage .OS.opensuse {
     background-image: url(../img/os/opensuse.png);
+}
+.downloadsPage .OS.source {
+    background-image: url(../img/github_s-01.png);
+}
+.downloadsPage .OS.more {
+    background-image: url(../img/os/more-01.png);
 }
