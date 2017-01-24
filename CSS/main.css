@@ -7,7 +7,7 @@
 
 html, body {
 	margin:0;
-	position:relative;
+	position:absolute;
 	height: 100%;
 	width: 100%;
 	min-width: 900px;
@@ -66,20 +66,24 @@ body {
 }
 
 .body {
-	
-	min-height: 100%;
+	position: fixed;
+    z-index: -1;
+	height: 100%;
+    width: 100%;
 	background: none;
 	background: url(../img/bg-01.png);
 	/*background: none rgba(38,54,65,0.87);*/
 }
 
 .header {
-	top: 40px;
+	padding: 40px 0px;
 	height: 40px;
 	width: 100%;
 	min-width: 900px;
 	position:fixed;
 	z-index: 1000;
+    
+	background: none;
 }
 
 
@@ -89,10 +93,25 @@ body {
 	height: 48px;
 	width: 184px;
 	display: block;
-	display: none;
 	position:absolute;
-	top: -8px;
 	left: 32px;
+    
+	top: 20px;
+    pointer-events: none;
+    opacity: 0;
+    
+    transition: 300ms opacity, 300ms top;
+}
+
+.header.scrolled {
+	background: url(../img/bg-01.png);
+	/*background: none rgba(38,54,65,0.87);*/
+}
+
+.header.scrolled .headLogo {
+	top: 36px;
+    pointer-events: auto;
+    opacity: 1;
 }
 
 .mainNav {
@@ -147,6 +166,7 @@ body {
 	width: 0px; 
 	height: 3px; 
 	background: #111a1e; 
+    margin-bottom: 40px;
 }
 
 #content_wrapper {
@@ -173,16 +193,30 @@ body {
 	position:fixed;
 	top: 50%;
 	left: 50%;
-	margin: -110px 0 0 -110px;
+	margin: -90px 0 0 -110px;
 	pointer-events:none;
 }
 
 .page {
+    width: 100%;
+    min-height: calc(100% - 120px);
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pageContent {
 	margin: auto;
 	width: 900px;
 	color:#9ec4d5;
-	padding-bottom: 40px;
+	padding: 40px 0;
 	text-align: justify;
+    /*position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);*/
 }
 
 .page h1 {
@@ -222,6 +256,6 @@ body {
 .pageTag {
     position: absolute;
     height: 0;
-    margin-top: -120px;
-    margin-bottom: 120px;
+    /*margin-top: -120px;
+    margin-bottom: 120px;*/
 }
