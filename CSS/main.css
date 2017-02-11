@@ -199,11 +199,15 @@ body {
 
 .page {
     width: 100%;
-    min-height: calc(100% - 120px);
+    min-height: calc(50% - 120px);
     padding-top: 120px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.splashPage {
+    min-height: calc(100% - 120px);
 }
 
 .pageContent {
