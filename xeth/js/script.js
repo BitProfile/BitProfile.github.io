@@ -40,6 +40,7 @@ $(document).ready(function(){
 
     stickyTop();
     qr.makeCode(uri);
+    initMenuRef(".header .headLogo", "#splashPage");
     initMenuRef("#detailsNav", "#detailsPage");
     initMenuRef("#supportNav", "#supportPage");
 });
