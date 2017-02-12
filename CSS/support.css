@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 .supportPage {
-    padding-bottom: 120px;
+    /*padding-bottom: 120px;*/
 }
 .supportPage:after {
     content: "";

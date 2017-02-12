@@ -199,7 +199,7 @@ body {
 
 .page {
     width: 100%;
-    min-height: calc(50% - 120px);
+    min-height: calc(100% - 120px);
     padding-top: 120px;
     display: flex;
     flex-direction: column;
@@ -208,6 +208,9 @@ body {
 
 .splashPage {
     min-height: calc(100% - 120px);
+}
+.getPage {
+    padding-top: 80px;
 }
 
 .pageContent {
