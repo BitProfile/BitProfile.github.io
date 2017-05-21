@@ -15,7 +15,7 @@ function initMenuRef(button, ref){
 $(document).ready(function(){
     initMenuRef(".header .headLogo", "#splashPage");
     initMenuRef(".mainNav #details", "#detailsPage");
-    initMenuRef(".mainNav #get", "#getPage");
+    //initMenuRef(".mainNav #get", "#getPage");
     initMenuRef(".mainNav #support", "#supportPage");
 });
 

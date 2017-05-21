@@ -206,6 +206,13 @@ body {
     justify-content: center;
 }
 
+.splashPage {
+    min-height: calc(100% - 120px);
+}
+.getPage {
+    padding-top: 80px;
+}
+
 .pageContent {
 	margin: auto;
 	width: 900px;
